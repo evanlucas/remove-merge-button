@@ -1,5 +1,5 @@
 {
-  "name": "remove-merge-button",
+  "name": "Remove Merge Button on GitHub",
   "version": "1.0.0",
   "manifest_version": 2,
   "content_scripts": [
