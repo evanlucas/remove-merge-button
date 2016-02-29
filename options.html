@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Remove GitHub Merge Button for Pull Requests</title>
+    <link href="css/options.css" rel="stylesheet">
+    <script src="api.js"></script>
+    <script src="options.js"></script>
+  </head>
+
+  <body>
+    <h3>Repositories</h3>
+    <label for="repo_name">Add repository</label>
+    <input id="repo_name">
+    <button type="button" id="addbtn">Add</button>
+    <hr>
+    <div class="repos">
+      <table id="repo_table">
+        <thead>
+          <tr>
+            <th>Repository Name</th>
+            <th>Enabled</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <p class="log"></p>
+  </body>
+</html>

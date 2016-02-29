@@ -1,0 +1,35 @@
+{
+  "name": "remove-merge-button",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "js": [
+        "api.js",
+        "node_modules/github-injection/index.js",
+        "content.js"
+      ],
+      "css": [
+        "css/content.css"
+      ],
+      "run_at": "document_start",
+      "matches": [
+        "https://github.com/*"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "https://github.com/*",
+    "storage"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "api.js"
+    ]
+  }
+}

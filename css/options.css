@@ -1,0 +1,7 @@
+table#repo_table {
+  width: 100%;
+}
+
+#repo_table tr th {
+  text-align: left;
+}
